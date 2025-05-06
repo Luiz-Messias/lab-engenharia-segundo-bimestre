@@ -5,6 +5,7 @@
   margin-top: 50px;
   color: #fff;
   animation: pulse 1s ease-in-out infinite;
+  background-color: black;
 }
 
 @keyframes pulse {
