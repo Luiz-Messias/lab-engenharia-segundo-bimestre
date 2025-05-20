@@ -1,0 +1,27 @@
+.atv01-letreiro {
+    font-size: 1.5em;
+    color: white;
+    background-color: #222;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #000;
+    margin-top: 12vh;
+    font-family: 'Courier New', Courier, monospace;
+    min-height: 2em;
+}
+
+.cursor {
+    display: inline-block;
+    width: 10px;
+    animation: blink 1s step-end infinite;
+    color: white;
+}
+
+@keyframes blink {
+    from, to {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}

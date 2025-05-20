@@ -1,0 +1,119 @@
+/* ----------  RESET BÁSICO ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ----------  VARIÁVEIS ---------- */
+:root {
+  --clr-bg-gradient: linear-gradient(135deg, #e0eaff 0%, #f8f9ff 100%);
+  --clr-card-glass: hsla(0, 0%, 100%, 0.45);
+  --clr-border-glass: hsla(0, 0%, 100%, 0.25);
+  --clr-text-primary: #0f172a;
+  --clr-accent: #6366f1;
+  --radius-lg: 1.25rem;
+  --transition-smooth: 250ms ease;
+  --blur-glass: 20px;
+  --shadow-soft: 0 6px 12px rgba(15, 23, 42, 0.12);
+  --font-main: "Inter", "Segoe UI", Tahoma, sans-serif;
+}
+
+/* ----------  LAYOUT PRINCIPAL ---------- */
+.home-container {
+  display: grid;
+  place-content: center;
+  min-height: 100svh;
+  background: var(--clr-bg-gradient);
+  font-family: var(--font-main);
+  text-align: center;
+  color: var(--clr-text-primary);
+  padding: 2rem;
+}
+
+/* ----------  CARTÃO CENTRAL ---------- */
+.home-card {
+  backdrop-filter: blur(var(--blur-glass));
+  background: var(--clr-card-glass);
+  border: 1px solid var(--clr-border-glass);
+  border-radius: var(--radius-lg);
+  padding: clamp(2rem, 5vw, 3.5rem);
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 28rem;
+  width: 100%;
+  animation: floatIn 600ms cubic-bezier(0.19, 1, 0.22, 1) both;
+}
+
+/* ----------  TIPOGRAFIA ---------- */
+.home-title {
+  font-size: clamp(2rem, 6vw, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.home-subtitle {
+  font-size: clamp(1rem, 3.5vw, 1.25rem);
+  font-weight: 500;
+  color: var(--clr-accent);
+}
+
+/* ----------  MENU / BOTÕES ---------- */
+.home-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.home-button {
+  display: inline-block;
+  padding: 0.9rem 1.8rem;
+  border-radius: calc(var(--radius-lg) / 2);
+  background: var(--clr-accent);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  box-shadow: 0 4px 10px rgba(99, 102, 241, 0.25);
+  transition: var(--transition-smooth);
+  will-change: transform, box-shadow;
+}
+
+.home-button:hover,
+.home-button:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(99, 102, 241, 0.35);
+}
+
+.home-button:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(99, 102, 241, 0.25);
+}
+
+/* ----------  ANIMAÇÕES ---------- */
+@keyframes floatIn {
+  0% {
+    opacity: 0;
+    transform: translateY(25px) scale(0.97);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* ----------  RESPONSIVIDADE EXTRA ---------- */
+@media (min-width: 48rem) {
+  .home-menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .home-button {
+    min-width: 10rem;
+  }
+}

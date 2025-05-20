@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #c9d6ff, #e2e2e2);
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+.titulo {
+  font-size: 3rem;
+  text-align: center;
+  margin: 40px 0 20px;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+.botao-voltar {
+  display: inline-block;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  border-radius: 12px;
+  padding: 12px 24px;
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  margin: 40px auto;
+  display: block;
+  width: max-content;
+}
+
+.botao-voltar:hover {
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+  color: #000;
+}
+
+div {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}

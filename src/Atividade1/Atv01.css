@@ -1,0 +1,29 @@
+.atv01-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #3a1c71, #d76d77, #ffaf7b);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #111;
+}
+
+.atv01-title {
+  font-size: 3em;
+  margin-top: -300px;
+  color: white;
+}
+
+.atv01-link {
+  display: inline-block;
+  color: #6c2bd9;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 3vh;
+}
+
+.atv01-link:hover {
+  color: #8c4fff;
+  text-decoration: underline;
+}

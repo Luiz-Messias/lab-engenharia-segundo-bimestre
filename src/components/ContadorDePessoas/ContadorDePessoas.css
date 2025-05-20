@@ -1,0 +1,39 @@
+.contador-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #282c34;
+    color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    width: 300px;
+    margin: 50px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contador-numero {
+    font-size: 4rem;
+    margin: 20px 0;
+}
+
+.contador-botoes button {
+    font-size: 2rem;
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #61dafb;
+    color: #000;
+    transition: background-color 0.3s;
+}
+
+.contador-botoes button:hover {
+    background-color: #21a1f1;
+}
+
+.contador-botoes button:disabled {
+    background-color: #888;
+    cursor: not-allowed;
+}

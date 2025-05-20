@@ -1,0 +1,136 @@
+.atv02-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #111;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  width: 380px;
+  margin: 40px auto;
+  text-align: center;
+  font-family: "Segoe UI", sans-serif;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+}
+
+.topo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.topo h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.reset-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.total-box {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 10px auto 25px;
+  padding: 12px 0;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  width: 90px;
+}
+
+.generos {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.genero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.genero img {
+  width: 90px;
+  margin-bottom: 10px;
+}
+
+.botoes {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.botao {
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* Botão + */
+.mais {
+  background-color: #4caf50;
+  width: 45px;
+  height: 45px;
+  font-size: 1.8rem;
+}
+
+/* Botão - */
+.menos {
+  background-color: #f44336;
+  width: 36px;
+  height: 36px;
+  font-size: 1.3rem;
+}
+
+.botao:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.valor {
+  margin-top: 4px;
+  padding: 6px 14px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+.atv02-title {
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.atv02-link {
+  display: inline-block;
+  color: #6c2bd9;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 3vh;
+}
+
+.atv02-link:hover {
+  color: #8c4fff;
+  text-decoration: underline;
+}
