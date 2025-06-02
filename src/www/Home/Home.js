@@ -23,6 +23,9 @@ const Home = () => {
           <Link className="home-button" to="/atv04">
             Atividade 04
           </Link>
+          <Link className="home-button" to="/atv05">
+            Atividade 05
+          </Link>
         </nav>
       </section>
     </div>
